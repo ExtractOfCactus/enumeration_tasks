@@ -35,19 +35,17 @@ var arrayTasks = {
 		var newArray = [];
 		var resultArray = [];
 		for (item of arr) {
-			if (newArray.includes(item) && !resultArray.includes(item)) {
-				resultArray.push(item);
-			}
-			else {
-				newArray.push(item);
-			}
+			newArray.includes(item) && !resultArray.includes(item) ? resultArray.push(item) : newArray.push(item);
 		}
 		return resultArray;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var resultArray = arr.filter(function(value) {
+			return (value != valueToRemove);
+		})
+		return resultArray;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		
