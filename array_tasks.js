@@ -16,9 +16,12 @@ var arrayTasks = {
 		return arr;
 	},
 
-	// square: function (arr) {
-		
-	// },
+	square: function (arr) {
+		var newArray = arr.map(function(number) {
+			return number * number;
+		})
+		return newArray;
+	},
 
 	// sum: function (arr) {
 		
