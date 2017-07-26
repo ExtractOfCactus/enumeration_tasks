@@ -31,9 +31,19 @@ var arrayTasks = {
 		return totalSum;
 	},
 
-	// findDuplicates: function (arr) {
-		
-	// },
+	findDuplicates: function (arr) {
+		var newArray = [];
+		var resultArray = [];
+		for (item of arr) {
+			if (newArray.includes(item) && !resultArray.includes(item)) {
+				resultArray.push(item);
+			}
+			else {
+				newArray.push(item);
+			}
+		}
+		return resultArray;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 		
