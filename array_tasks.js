@@ -57,9 +57,13 @@ var arrayTasks = {
 		return indexArray;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		var evenArray = arr.filter(function(value) {
+			return value % 2 === 0;
+		})
+		var squaredArray = this.square(evenArray);
+		return this.sum(squaredArray);
+	}
 
 }
 
