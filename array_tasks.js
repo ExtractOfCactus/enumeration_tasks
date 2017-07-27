@@ -1,14 +1,19 @@
 var arrayTasks = {
 
+	// concat: function (arr1, arr2) {
+	// 	var newArray = []
+	// 	for (element of arr1) {
+	// 		newArray.push(element);
+	// 	}
+	// 	for (element of arr2) {
+	// 		newArray.push(element);
+	// 	}
+	// 	return newArray;
+	// },
+
 	concat: function (arr1, arr2) {
-		var newArray = []
-		for (element of arr1) {
-			newArray.push(element);
-		}
-		for (element of arr2) {
-			newArray.push(element);
-		}
-		return newArray;
+		var resultArray = arr1.concat(arr2);
+		return resultArray;
 	},
 
 	insertAt: function (arr, itemToAdd, index) {
